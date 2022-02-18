@@ -1,0 +1,85 @@
+*{
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+	background-color:#E5E5E5;
+}
+@font-face {
+    font-family: Block_Quote;
+    src: url(fonts/ArialNova-LightItalic.ttf);
+	}
+
+@font-face {
+    font-family: Title;
+    src: url(fonts/GOTHICB490.TTF);
+	}
+
+@font-face {
+    font-family: Body;
+    src: url(fonts/GOTHIC489.TTF);
+	}
+
+img{
+	margin:0 12vw 5vw 12vw;
+	width:76vw;
+	display: block;
+}
+
+#anchor{
+	width: 30vw;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title{
+	font-family: Title;
+	padding:8vw 8vw 8vw 8vw;
+}
+
+#top{
+  display: none;
+  position: fixed;
+  bottom: -2vw;
+  right: -10vw;
+  z-index: 99;
+  font-size: 1.1vw;
+  border: none;
+  outline: none;
+  background-color: none;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  width: 3vw;
+  height: auto;
+}
+
+
+
+blockquote{
+	font-family: Block_Quote;
+	column-count: 2;
+	column-gap:5vw;
+	padding:0 12vw 5vw 12vw;
+	font-size:1.1vw;
+	line-height: 1.7vw;
+}
+
+#blockquote_3{
+	column-count: 1;
+	padding:0 12vw 5vw 12vw;
+}
+
+hr{
+	padding:0;
+	margin: 0 8vw 5vw 8vw;
+    color:#c4c4c4;
+}
+
+p{
+	font-family: Body;
+	column-count: 1;
+	padding:0 8vw 5vw 8vw;
+	font-size: 1.2vw;
+	line-height: 2vw;
+}
