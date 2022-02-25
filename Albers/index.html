@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<style type="text/css">
+		
+		*{
+			margin:0;
+			background-color: black;
+		}	
+
+
+		.albers_1{
+			background-color: none;
+			margin-left:25%;
+			margin-right:25%;
+			margin-top:10%;
+			margin-bottom:10%;
+			width:500px;
+			height:500px;
+		}
+
+		.middle_1{
+			display: inline-block;
+			vertical-align: bottom;
+			margin-left:0;
+			margin-right:0;
+			margin-top:0;
+			margin-bottom:0;
+			height:50%;
+			width: 50%;		
+		}	
+
+		.alber1{
+			display: inline-block;
+			vertical-align: bottom;
+			margin-left:0;
+			margin-right:0;
+			margin-top:0;
+			margin-bottom:0;
+		}
+
+		#middle_1{
+			background-color: pink;		
+		}	
+
+		#middle_2{
+			background-color: #98F3F6;
+			width: 25%;
+		}
+
+		#middle_3{
+			background-color: blue;
+			width: 25%;
+		}
+
+		#middle_4{
+			background-color: #98F3FF;
+		}
+
+		#small_div{
+			background-color: blue;
+			height: 50%;
+			width: 100%;
+		}
+
+		#middle_5{
+			background-color: pink;
+			width: 50%;
+		}	
+
+		#alber1_1{
+			background-color: black;
+			width: 50%;	
+			border-radius: 100% 0 0 0;
+			height:50%;
+			margin-top: 50%;
+			margin-left: 50%;
+		}
+
+		#alber1_2{
+			background-color: black;
+			width: 100%;	
+			border-radius: 0 100% 0 0;
+			height:50%;
+			margin-top: 100%;
+		}
+
+		#alber1_3{
+			background-color: black;
+			width: 50%;	
+			border-radius: 0 0 0 100%;
+			height:50%;
+			margin-left: 50%;
+		}
+
+		#alber1_4{
+			background-color: blue;
+			width: 50%;	
+			border-radius: 0 0 100% 0;
+			height:50%;
+		}
+
+
+
+				.albers_2{
+			background-color: none;
+			margin-left:25%;
+			margin-right:25%;
+			margin-top:10%;
+			margin-bottom:10%;
+			width:500px;
+			height:500px;
+		}
+
+		.middle_2{
+			background-color: orange;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-left:0;
+			margin-right:0;
+			margin-top:0;
+			margin-bottom:0;
+			height:50%;
+			width: 50%;		
+		}	
+
+		.alber2{
+			background-color: pink;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-left:0;
+			margin-right:0;
+			margin-top:0;
+			margin-bottom:0;
+			height: 100%;
+			width: 100%;
+		}
+
+		#div_1{
+			height:70%;
+			width:70%;
+			margin-left:30%;
+			margin-top:30%;
+		}
+
+		#div_2{
+			height:70%;
+			width:70%;
+			margin-top:30%;
+		}
+
+		#div_3{
+			height:70%;
+			width:70%;
+			margin-left:30%;
+		}
+
+		#div_4{
+			height:70%;
+			width:70%;
+		}
+
+		#alber2_1{
+			border-radius: 100% 0 0 0;
+
+		}
+
+		#alber2_2{
+			border-radius: 0 100% 0 0;
+
+		}
+
+		#alber2_3{
+			border-radius: 0 0 0 100%;
+
+		}
+
+		#alber2_4{
+			border-radius: 0 0 100% 0;
+
+		}
+
+		#alber2_5{
+			border-radius: 100% 0 0 0;
+
+		}
+
+		#alber2_6{
+			border-radius: 0 100% 0 0;
+
+		}
+
+		#alber2_7{
+			border-radius: 0 0 0 100%;
+
+		}
+
+		#alber2_8{
+			border-radius: 0 0 100% 0;
+
+		}
+
+
+
+		.albers_3{
+			background-color: none;
+			margin-left:25%;
+			margin-right:25%;
+			margin-top:10%;
+			margin-bottom:10%;
+			width:500px;
+			height:500px;
+		}
+		
+		.alber3_div{
+			display: inline-block;
+			vertical-align: bottom;
+			margin-left:0;
+			margin-right:0;
+			margin-top:0;
+			margin-bottom:0;
+			height:25%;		
+		}	
+
+		#alber3_1{
+			background-color: pink;
+			width:50%;
+		}	
+
+		#alber3_2{
+			background-color: #A8FAFF;
+			width:25%;
+		}
+
+		#alber3_3{
+			background-color: blue;
+			width:25%;
+		}
+
+		#alber3_4{
+			background-color: pink;
+			width:25%;
+		}
+
+		#alber3_5{
+			background-color: #A8FAFF;
+			width:25%;
+		}
+
+		#alber3_6{
+			background-color: blue;
+			width:50%;
+		}	
+
+
+	</style>	
+
+</head>
+<body>
+
+	<div class="albers_1">
+		<div class="middle_1" id="middle_1">
+			<div class="alber1" id="alber1_1"></div>
+		</div
+		><div class="middle_1" id="middle_2">
+			<div class="alber1" id="alber1_2"></div>
+		</div
+		><div class="middle_1" id="middle_3"></div
+		><div class="middle_1" id="middle_4">
+			<div class="alber1" id="alber1_3"></div>
+			<div class="middle_1" id="small_div"></div>
+		</div
+		><div class="middle_1" id="middle_5">
+			<div class="alber1" id="alber1_4"></div>
+		</div>
+	</div>
+
+
+	<div class="albers_2">
+		<div class="middle_2">
+			<div class="alber2" id="alber2_1">
+				<div class="middle_2" id="div_1">
+					<div class="alber2" id="alber2_5"></div>
+				</div>
+			</div>
+		</div
+		><div class="middle_2">
+			<div class="alber2" id="alber2_2">
+				<div class="middle_2" id="div_2">
+					<div class="alber2" id="alber2_6"></div>
+				</div>
+			</div>
+		</div
+		><div class="middle_2">
+			<div class="alber2" id="alber2_3">
+				<div class="middle_2" id="div_3">
+					<div class="alber2" id="alber2_7"></div>
+				</div>
+			</div>
+		</div
+		><div class="middle_2">
+			<div class="alber2" id="alber2_4">
+				<div class="middle_2" id="div_4">
+					<div class="alber2" id="alber2_8"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="albers_3">
+		<div class="alber3_div" id="alber3_1"></div
+		><div class="alber3_div" id="alber3_2"></div
+		><div class="alber3_div" id="alber3_3"></div
+		><div class="alber3_div" id="alber3_4"></div
+		><div class="alber3_div" id="alber3_5"></div
+		><div class="alber3_div" id="alber3_6"></div
+		><div class="alber3_div" id="alber3_1"></div
+		><div class="alber3_div" id="alber3_2"></div
+		><div class="alber3_div" id="alber3_3"></div
+		><div class="alber3_div" id="alber3_4"></div
+		><div class="alber3_div" id="alber3_5"></div
+		><div class="alber3_div" id="alber3_6"></div>		
+	</div>
+
+
+
+
+</body>
+</html>
