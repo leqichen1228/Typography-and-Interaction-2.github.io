@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+		    box-sizing: border-box;
+		}
+
+		@font-face {
+		    font-family: H3;
+		    src: url(fonts/ArialNova-LightItalic.ttf);
+		}
+
+		#bg{
+		    position: fixed;
+		    z-index: -1;
+		    width: 100%；
+		    height: auto;
+		    overflow: hidden;
+		    margin:0;
+		    padding: 0;
+		    top:0;
+		    left:0;
+		}
+
+		h3{
+			position: absolute;
+			top:2vw;
+			right:5vw;
+			font-size: 2vw;
+			color:white;
+			font-family: H3;
+		}
+
+		.non_link{
+			position: absolute;
+			width: 10vw;
+			height: 10vw;
+		}
+
+		#div_1{		
+			left:40vw;
+			top:20vw;			
+		}
+
+		#div_2{
+			left:20vw;
+			top:10vw;
+		}
+
+		.note {
+			position:relative; 
+			left:-9999px; 
+			top:-9999px; 
+			z-index:9999;
+			background-color: white;
+ 			color:black;
+ 			font-size: 1vw;
+ 			text-align: center;
+ 			width: 13vw;
+ 			height: 5vw;	
+ 			line-height: 5vw;
+ 			position: relative;
+		}
+
+		a:hover .note { 
+			position: relative;
+			left:-2vw;
+			top:-15vw;
+  		    z-index:1;
+ 		}
+
+ 		a{
+ 			text-decoration: none;
+ 			color:black;
+ 		}
+
+
+ 		.images{
+ 			position: relative;
+ 			width: 100%;
+ 			top:-2vw;
+	
+ 		}
+ 		
+
+	</style>
+</head>
+<body>
+<h3>Choose a snack for tonight!</h3>
+<img id="bg" src="bg/03.jpg">
+<a href="#">
+	<div class="non_link" id="div_1">
+        <img class="images" src="snack/IMG_5064.png">
+        <div class="note"><p>I don’t like this flavor.</p></div>
+	</div>
+</a>
+<a href="#">
+	<div class="non_link" id="div_2">
+        <img class="images" src="snack/IMG_5069.png">
+        <div class="note"><p>This one looks good!!</p></div>
+	</div>
+</a>
+
+</body>
+</html>
