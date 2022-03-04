@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fruits</title>
+	<style type="text/css">
+		*{
+		    box-sizing: border-box;
+		}
+
+		@font-face {
+		    font-family: H3;
+		    src: url(fonts/SpaceGrotesk-Bold.otf);
+		}
+
+		@font-face {
+		    font-family: Notes;
+		    src: url(fonts/SpaceGrotesk-Medium.otf);
+		}
+
+		img{
+			width: 100vw;
+		}
+
+		#bg{
+		    position: absolute;
+		    z-index: -1;
+		    height: auto;
+		    overflow: hidden;
+		    margin:0;
+		    padding: 0;
+		    top:0;
+		    left:0;
+		}
+
+		h3{
+			position: absolute;
+			top:0;
+			width: 100%;
+			text-align: center;
+			font-size: 2vw;
+			color:white;
+			font-family: H3;
+		}
+
+		.img_divs{
+			position: absolute;
+			width: 14vw;
+			height: 10vw;
+		}
+
+		.images{
+ 			position: relative;
+ 			width: 100%;
+ 			top:-2vw;
+ 		}
+
+		.note {
+			position:relative; 
+			left:-9999px; 
+			top:-9999px; 
+			z-index:9999;
+ 			color:white;
+ 			font-size: 1.1vw;
+ 			font-family: Notes;
+ 			text-align: center;
+ 			width: 15vw;
+ 			height: 5vw;	
+ 			line-height: 1vw;
+ 			display: flex;
+ 			justify-content: center;
+ 			align-items: center;
+ 			position: relative;
+ 			background-color: rgba(255, 255, 255, 0.1);
+ 			backdrop-filter:blur(10px);
+ 		}
+
+		a:hover .note { 
+			position: relative;
+			left:0;
+			top:-10vw;
+  		    z-index:1;
+ 		}
+
+ 		a{
+ 			text-decoration: none;
+ 			color:black;
+ 		}
+
+ 		#pear1{	
+ 			width: 30%;		
+			left:20vw;
+			top:20vw;	
+			transform: rotate(15deg);		
+		}
+
+		#pear2{	
+			width: 10%;		
+			left:6vw;
+			top:30vw;	
+			transform: rotate(15deg);		
+		}
+
+		#dragonfruit{
+			left:80vw;
+			top:10vw;
+			transform: rotate(-10deg);
+		}
+
+		#oranges{
+			width: 20%;	
+			left:20vw;
+			top:45vw;
+			transform: rotate(-8deg);
+		}
+
+		#citrus{
+			width: 20%;			
+			left:60vw;
+			top:35vw;	
+			transform: rotate(-10deg);		
+		}
+
+		#apple1{
+			width: 10%;	
+			left:80vw;
+			top:30vw;	
+			transform: rotate(15deg);		
+		}
+
+		#apple2{
+			width: 10%;
+			left:5vw;
+			top:5vw;
+			transform: rotate(-10deg);
+		}
+
+		#apple3{
+			width: 20%;
+			left:45vw;
+			top:15vw;
+			transform: rotate(-5deg);
+		}
+
+		#durian{
+			left:65vw;
+			top:5vw;
+			transform: rotate(6deg);
+		}
+
+		#strawberry{
+			left:50vw;
+			top:55vw;
+			transform: rotate(5deg);
+		}	
+
+		.disabled {
+		    cursor: default;
+		}
+ 		
+	</style>
+</head>
+<body>
+<h3>Let's get some fruits😝</h3>
+<img id="bg" src="bg/020.jpg">
+<a class="disabled" href="#">
+	<div class="img_divs" id="pear1">
+        <img class="images" src="fruit/IMG_5152.png">
+        <div class="note"><p>Too much..</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="pear2">
+        <img class="images" src="fruit/IMG_5155.png">
+        <div class="note"><p>I don feel like getting pears today.</p></div>
+	</div>
+</a>
+<a href="tea.html">
+	<div class="img_divs" id="dragonfruit">
+        <img class="images" src="fruit/IMG_5153.png">
+        <div class="note"><p>This one looks good!!</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="oranges">
+        <img class="images" src="fruit/IMG_5156.png">
+        <div class="note"><p>Umm..the oranges look bad.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="citrus">
+        <img class="images" src="fruit/IMG_5139.png">
+        <div class="note"><p>Too much..</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="apple1">
+        <img class="images" src="fruit/IMG_5160.png">
+        <div class="note"><p>I don't feel like getting apple today.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="apple2">
+        <img class="images" src="fruit/IMG_5161.png">
+        <div class="note"><p>I don't feel like getting apple today.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="apple3">
+        <img class="images" src="fruit/IMG_5157.png">
+        <div class="note"><p>Umm..maybe no.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="durian">
+        <img class="images" src="fruit/IMG_5169.png">
+        <div class="note"><p>This is too expensive!</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="strawberry">
+        <img class="images" src="fruit/IMG_5138.png">
+        <div class="note"><p>Umm..these strawberries look bad.</p></div>
+	</div>
+</a>
+
+</body>
+</html>

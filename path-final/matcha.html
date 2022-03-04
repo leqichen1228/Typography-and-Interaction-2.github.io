@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>More Snacks..</title>
+	<style type="text/css">
+		*{
+		    box-sizing: border-box;
+		}
+
+		@font-face {
+		    font-family: H3;
+		    src: url(fonts/SpaceGrotesk-Bold.otf);
+		}
+
+		@font-face {
+		    font-family: Notes;
+		    src: url(fonts/SpaceGrotesk-Medium.otf);
+		}
+
+		img{
+			width: 100vw;
+		}
+
+		#bg{
+		    position: absolute;
+		    z-index: -1;
+		    height: auto;
+		    overflow: hidden;
+		    margin:0;
+		    padding: 0;
+		    top:0;
+		    left:0;
+		}
+
+		h3{
+			position: absolute;
+			top:0;
+			width: 100%;
+			text-align: center;
+			font-size: 2vw;
+			color:white;
+			font-family: H3;
+		}
+		h5{
+			position: absolute;
+			top:3vw;
+			width: 100%;
+			text-align: center;
+			font-size: 1.5vw;
+			color:white;
+			font-family: H3;
+		}
+
+		.img_divs{
+			position: absolute;
+			width: 14vw;
+			height: 10vw;
+		}
+
+		.images{
+ 			position: relative;
+ 			width: 100%;
+ 			top:-2vw;
+ 		}
+
+		.note {
+			position:relative; 
+			left:-9999px; 
+			top:-9999px; 
+			z-index:9999;
+ 			color:white;
+ 			font-size: 1.1vw;
+ 			font-family: Notes;
+ 			text-align: center;
+ 			width: 12vw;
+ 			height: 6vw;	
+ 			line-height: 1vw;
+ 			display: flex;
+ 			justify-content: center;
+ 			align-items: center;
+ 			position: relative;
+ 			background-color: rgba(255, 255, 255, 0.1);
+ 			backdrop-filter:blur(10px);
+ 		}
+
+		a:hover .note { 
+			position: relative;
+			left:3vw;
+			top:-15vw;
+  		    z-index:1;
+ 		}
+
+ 		a{
+ 			text-decoration: none;
+ 			color:black;
+ 		}
+
+ 		#choco1{	
+ 			width: 20%;		
+			left:28vw;
+			top:20vw;	
+			transform: rotate(20deg);		
+		}
+
+		#choco2{	
+			width: 18%;		
+			left:6vw;
+			top:30vw;	
+			transform: rotate(7deg);		
+		}
+
+		#choco3{
+			width: 20%;
+			left:75vw;
+			top:12vw;
+			transform: rotate(25deg);
+		}
+
+		#choco4{
+			width: 20%;	
+			left:25vw;
+			top:40vw;
+			transform: rotate(-8deg);
+		}
+
+		#choco5{
+			width: 20%;			
+			left:60vw;
+			top:35vw;	
+			transform: rotate(-6deg);		
+		}
+
+		#choco6{
+			width: 15%;	
+			left:80vw;
+			top:25vw;	
+			transform: rotate(-15deg);		
+		}
+
+		#matcha1{
+			width:20%;
+			left:5vw;
+			top:5vw;
+			transform: rotate(-10deg);
+		}
+
+		#matcha2{
+			width:20%;
+			left:45vw;
+			top:10vw;
+			transform: rotate(-5deg);
+		}
+
+		#matcha3{
+			width: 10%;
+			left:70vw;
+			top:7vw;
+			transform: rotate(6deg);
+		}	
+
+		#milk1{
+			width: 10%;
+			left:63vw;
+			top:15vw;
+			transform: rotate(-25deg);
+		}
+
+		#milk2{
+			width: 15%;
+			left:20vw;
+			top:15vw;
+			transform: rotate(-25deg);
+		}
+
+		#milk3{
+			width: 15%;
+			left:44vw;
+			top:39vw;
+			transform: rotate(-25deg);
+		}
+
+		#milk4{
+			width: 20%;
+			left:70vw;
+			top:43vw;
+			transform: rotate(25deg);
+		}
+
+		#strawberry{
+			width: 12%;
+			left:6vw;
+			top:48vw;
+			transform: rotate(-25deg);
+		}
+
+		.disabled {
+		    cursor: default;
+		}
+ 		
+	</style>
+</head>
+<body>
+<h3>Let's get more!</h3>
+<h5>I want something in matcha or chocolate flavor🤔</h5>
+<img id="bg" src="bg/06.jpg">
+<a class="disabled" href="#">
+	<div class="img_divs" id="choco1">
+        <img class="images" src="chocolate/IMG_5063.png">
+        <div class="note"><p>Umm..maybe not mint.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="choco2">
+        <img class="images" src="chocolate/IMG_5108.png">
+        <div class="note"><p>I don't want cookies today.</p></div>
+	</div>
+</a>
+<a href="hotpot.html">
+	<div class="img_divs" id="choco3">
+        <img class="images" src="chocolate/IMG_5223.png">
+        <div class="note"><p>Looks good!!</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="choco4">
+        <img class="images" src="chocolate/IMG_5325.png">
+        <div class="note"><p>Umm..maybe no.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="choco5">
+        <img class="images" src="chocolate/IMG_5326.png">
+        <div class="note"><p>I don't want cookies today.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="choco6">
+        <img class="images" src="chocolate/IMG_5327.png">
+        <div class="note"><p>I don't want cookies today.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="matcha1">
+        <img class="images" src="matcha/IMG_5069.png">
+        <div class="note"><p>Maybe no almond.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="matcha2">
+        <img class="images" src="matcha/IMG_5331.png">
+        <div class="note"><p>I still have Pocky's at home.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="matcha3">
+        <img class="images" src="matcha/IMG_5103.png">
+        <div class="note"><p>Umm..maybe no.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="milk1">
+        <img class="images" src="milk/IMG_5102.png">
+        <div class="note"><p>This is milk flavor.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="milk2">
+        <img class="images" src="milk/IMG_5114.png">
+        <div class="note"><p>This is milk flavor.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="milk3">
+        <img class="images" src="milk/IMG_5065.png">
+        <div class="note"><p>This is milk flavor.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="milk4">
+        <img class="images" src="milk/IMG_5107.png">
+        <div class="note"><p>This is milk flavor.</p></div>
+	</div>
+</a>
+<a class="disabled" href="#">
+	<div class="img_divs" id="strawberry">
+        <img class="images" src="snack/IMG_5113.png">
+        <div class="note"><p>I don't want strawberry flavor.</p></div>
+	</div>
+</a>
+
+</body>
+</html>

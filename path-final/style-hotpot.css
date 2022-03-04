@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+            font-family: H3;
+            src: url(fonts/SpaceGrotesk-Bold.otf);
+}
+
+@font-face {
+            font-family: Notes;
+            src: url(fonts/SpaceGrotesk-Medium.otf);
+}
+
+img{
+    width: 100vw;
+}
+
+#bg{
+    position: fixed;
+    z-index: -1;
+    height: auto;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+    top:0;
+    left:0;
+}
+
+h3{
+    position: absolute;
+    top:5vw;
+    width: 100%;
+    left:5vw;
+    text-align: left;
+    font-size: 2vw;
+    color:white;
+    font-family: H3;
+}
+
+.marquee {
+    height: auto;
+    width: 70vw;
+    overflow: hidden;
+    position: relative;
+    top:0;
+    display: inline-flex;
+    left: 40vw;
+}
+
+
+.marquee-up{
+    display:block;
+    list-style: none;
+    animation: scroll-up 10s linear infinite alternate; 
+}
+
+.marquee-down{
+    display:block;
+    list-style: none;
+    animation: scroll-down 10s linear infinite alternate;
+}
+
+.marquee-up:hover{
+    animation-play-state:paused;
+    cursor: pointer;
+}
+
+.marquee-down:hover{
+    animation-play-state:paused;
+    cursor: pointer;
+}
+
+.marquee-item{
+    display: block;
+    width:20vw;
+    height:auto;  
+    flex-shrink:0;
+    padding:0.5vw;
+}
+
+.marquee-image{
+    width:100%;
+    height:auto;
+}   
+            
+        
+@keyframes scroll-up {
+    0% {
+        transform: translateY(-30%);
+        }
+    100% {
+        transform: translateY(0%);
+        }
+}
+
+@keyframes scroll-down {
+    0% {
+        transform: translateY(0%);
+        }
+    100% {
+        transform: translateY(-30%);
+        }
+}
+
+.note {
+    position:relative; 
+    left:-9999px; 
+    top:-9999px; 
+    z-index:9999;
+    color:white;
+    font-size: 1vw;
+    font-family: Notes;
+    text-align: center;
+    width: 10vw;
+    height: 5vw;    
+    line-height: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(10px);
+}
+
+a:hover .note { 
+    position: relative;
+    left:5vw;
+    top:-10vw;
+    z-index:1;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.disabled {
+  cursor: default;
+}
+          
